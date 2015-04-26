@@ -9,6 +9,7 @@ class EulerSpider(scrapy.Spider):
     allowed_domains = ["projecteuler.net"]
 
     start_urls = []
+    # Todo: Find a way to determine the number of PE question
     for i in range(1, 502):
         start_urls.append("https://projecteuler.net/problem=%d" % i)
 
